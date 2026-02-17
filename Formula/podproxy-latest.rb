@@ -1,7 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
-class PodproxyATLatest < Formula
+class PodproxyLatest < Formula
   desc "Kubernetes pod proxy that routes traffic through pod port-forwarding"
   homepage "https://github.com/entwico/podproxy"
   license "MIT"
