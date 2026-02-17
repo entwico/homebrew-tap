@@ -1,4 +1,4 @@
-# Entwico Homebrew Tap
+# Homebrew Tap
 
 Custom [Homebrew](https://brew.sh) tap.
 
@@ -21,7 +21,7 @@ brew install entwico/tap/podproxy
 **Latest** (bleeding-edge, built from main):
 
 ```bash
-brew install entwico/tap/podproxy@latest
+brew install entwico/tap/podproxy-latest
 ```
 
 ### Update
