@@ -9,20 +9,20 @@ class PodproxyLatest < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/entwico/podproxy/releases/download/latest/podproxy_darwin_arm64.tar.gz"
-      sha256 "d2735d01ab1c8f469c363251653070d6e98fdb7c2fd7e18cb9888810ef9e0a06"
+      sha256 "1129114e0007d5855e2818d8631c64428968bcc34717d564b470d255766d36ac"
     else
       url "https://github.com/entwico/podproxy/releases/download/latest/podproxy_darwin_amd64.tar.gz"
-      sha256 "67d05c3e0f356f16fa5ae408268f0c1d05d25712c1452089e1fd85090491d7a8"
+      sha256 "5ea226fdc8b997c8fffeb31001c95d4bcfe548c6bbd06ea34fce66b4d049f04b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/entwico/podproxy/releases/download/latest/podproxy_linux_arm64.tar.gz"
-      sha256 "11ba73acfe163881baad5725e3fadd7d9cfbe419f1e4f1983310fd6cbf842e4d"
+      sha256 "508e7b2def7c8ff6ac6d8982e11b061d68881c9bcbf615da036ad8bd0073854d"
     else
       url "https://github.com/entwico/podproxy/releases/download/latest/podproxy_linux_amd64.tar.gz"
-      sha256 "e3ad8be9a9f92661dff85f61b210e128b55cc99c92c03bf4e585003e5d07b5ee"
+      sha256 "83421a87ab587af212e67ddcd22b66a16d702ad21bf48c33c432b4c07ac30ce3"
     end
   end
 
