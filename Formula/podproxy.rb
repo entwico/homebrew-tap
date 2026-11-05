@@ -5,13 +5,13 @@
 class Podproxy < Formula
   desc "Kubernetes pod proxy that routes traffic through pod port-forwarding"
   homepage "https://github.com/entwico/podproxy"
-  version "1.3.0"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/entwico/podproxy/releases/download/v1.3.0/podproxy_darwin_amd64.tar.gz"
-      sha256 "847cc93e9c519943aa82d6a25a7517b3315b0c77b0c5401a00b4f990fa879b47"
+      url "https://github.com/entwico/podproxy/releases/download/v1.4.0/podproxy_darwin_amd64.tar.gz"
+      sha256 "6b79da396058a636215013cfd550c8a73af22db91360174e4fc63f104462bb10"
 
       def install
         bin.install "podproxy"
@@ -19,8 +19,8 @@ class Podproxy < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/entwico/podproxy/releases/download/v1.3.0/podproxy_darwin_arm64.tar.gz"
-      sha256 "7b2a8c839becefc1fa9b97788adcc7257d0bee23e5bac6d6c631a19e69ad7d12"
+      url "https://github.com/entwico/podproxy/releases/download/v1.4.0/podproxy_darwin_arm64.tar.gz"
+      sha256 "49444e5150fe872b92ccad161cc51d1cbafca6d859b90a465cfe40d9c1152951"
 
       def install
         bin.install "podproxy"
@@ -31,16 +31,16 @@ class Podproxy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/entwico/podproxy/releases/download/v1.3.0/podproxy_linux_amd64.tar.gz"
-      sha256 "93d3852845f13796ed16ec2ec19dd5d55867494c951c4bc7efed2f130326a459"
+      url "https://github.com/entwico/podproxy/releases/download/v1.4.0/podproxy_linux_amd64.tar.gz"
+      sha256 "8b6642dc108843aac1a5c0fbfd1eb6593a038da585e072862a18cf819478340a"
       def install
         bin.install "podproxy"
         (etc/"podproxy").install "defaults.yaml" => "config.yaml" unless (etc/"podproxy/config.yaml").exist?
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/entwico/podproxy/releases/download/v1.3.0/podproxy_linux_arm64.tar.gz"
-      sha256 "c5644b5a67c7718b1fb75b38c386225f4ea9b39c6a965157e6045683c910516c"
+      url "https://github.com/entwico/podproxy/releases/download/v1.4.0/podproxy_linux_arm64.tar.gz"
+      sha256 "7aad6ef63a4c2098b75bab14956958b9732f516f378055c10447d02e6da03e0d"
       def install
         bin.install "podproxy"
         (etc/"podproxy").install "defaults.yaml" => "config.yaml" unless (etc/"podproxy/config.yaml").exist?
